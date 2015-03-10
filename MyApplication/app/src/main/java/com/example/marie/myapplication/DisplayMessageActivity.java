@@ -11,22 +11,19 @@ import android.widget.TextView;
 
 
 public class DisplayMessageActivity extends ActionBarActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Intent intent = getIntent();
         String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
-        TextView textView = new TextView(this);
+       // TextView textView = (TextView) findViewById(R.id.finalmessage);
+        setContentView(R.layout.activity_display_message);
+
+        TextView textView = (TextView) findViewById(R.id.finalmessage);
+       // TextView textView = new TextView(this);
         textView.setTextSize(30);
         textView.setText(message);
 
-
-        LinearLayout layout = new LinearLayout(this);
-        layout.setBackgroundResource(R.drawable.a);
-        setContentView(layout);
-
-        setContentView(textView);
 
 
     }
@@ -46,4 +43,5 @@ public class DisplayMessageActivity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
 }
