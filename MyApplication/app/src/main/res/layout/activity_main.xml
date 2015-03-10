@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/a">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/label_name"
+            android:text="@string/label_name"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#040000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <EditText android:id="@+id/edit_message1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_text" />
+        </LinearLayout>
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/label_like"
+            android:text="@string/label_like"
+            android:textStyle="bold"
+            android:textColor="#040000"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <EditText android:id="@+id/edit_message2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_text" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/label_dislike"
+            android:text="@string/label_dislike"
+            android:textStyle="bold"
+            android:textColor="#040000"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <EditText android:id="@+id/edit_message3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_text" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_send"
+        android:textStyle="bold"
+        android:textColor="#040000"
+        android:onClick="sendTexts"
+        />
+        </LinearLayout>
+</LinearLayout>
